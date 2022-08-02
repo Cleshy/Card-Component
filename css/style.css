@@ -12,7 +12,6 @@
   --clr-neutral-500: 228, 12%, 48%;
   --clr-neutral-100: 0, 0%, 100%;
 
-  /* Font Family & Font Size & Font Weight */
   --ff-body: "Montserrat", sans-serif;
   --ff-heading: "Fraunces", serif;
   --fs-body: 0.875rem;
@@ -22,7 +21,7 @@
 
   /* Line heights */
   --lh-body: 1.6;
-  --lh-heading: 1.1;
+  --lh-heading: 1;
 }
 
 /* ====================== */
@@ -95,6 +94,10 @@ body {
   font-size: var(--fs-body);
   background-color: hsl(var(--clr-primary-100));
   color: hsl(var(--clr-neutral-900));
+  /* Thank you for your advice @elaineleung from Frontend Mentor 😊 */
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
 }
 
 .container {
@@ -104,23 +107,26 @@ body {
 
 .item-box {
   background-color: hsl(var(--clr-neutral-100));
-  border-radius: 5px;
+  border-radius: 10px;
   color: hsl(var(--clr-neutral-900));
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  left: 50%;
-  overflow: hidden;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
   width: 36rem;
+  margin-inline: auto;
 }
 
 .item-img-box {
-  background-image: url(../images/image-product-desktop.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url(../images/image-product-desktop.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .item-content {
@@ -129,16 +135,16 @@ body {
 
 .item-tag {
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 0.8rem;
   letter-spacing: 4px;
   color: hsl(var(--clr-neutral-900), 0.5);
 }
 
 .item-heading {
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-family: var(--ff-heading);
   line-height: var(--lh-heading);
-  padding: 0.3em 0 0.5em 0;
+  padding: 0.5em 0 0.5em 0;
   font-weight: var(--fw-bold);
 }
 
@@ -174,7 +180,7 @@ body {
   cursor: pointer;
   display: flex;
   font-weight: var(--fw-bold);
-  gap: 0.5em;
+  gap: 0.6em;
   justify-content: center;
   padding: 1em 1.5em;
   transition: all 0.3s;
@@ -186,7 +192,7 @@ body {
 }
 
 .item-icon {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 /* ====================== */
@@ -202,6 +208,8 @@ body {
 
   .item-img-box {
     background-image: url("../images/image-product-mobile.jpg");
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
   }
 
   .item-content {

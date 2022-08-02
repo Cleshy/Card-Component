@@ -11,6 +11,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
+  - [Update](#update)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
@@ -54,6 +55,12 @@ This is a really great exercise for 'beginners' like me. I spent a lot of time s
 A few days ago I watched one of Kevin's video on YouTube and found the Frontend Mentor website. This is when I finally decided I have to get out of the tutorial hell. 👨‍💻
 
 These are really great exercises, and I hope my solutions will be good as well. 🤞
+
+### Update
+
+I felt like I have to put a gradient on the image. With a really low alpha value for sure. 😊 Also changed some font size and the icon size in the button.
+
+Shout out to [@elaineleung](https://www.frontendmentor.io/profile/elaineleung) for her kind help with positioning my element with less code, and a simpler solution! 🌹
 
 ### Useful resources
 
